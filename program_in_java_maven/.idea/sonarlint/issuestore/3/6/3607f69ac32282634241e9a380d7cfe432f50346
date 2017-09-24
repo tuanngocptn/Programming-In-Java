@@ -1,0 +1,19 @@
+
+Psquid:S1948"/Make "courseControl" transient or serializable.(¢ˆŒ”ÿÿÿÿÿ8ßÜúë+
+Csquid:S1604"(Make this anonymous inner class a lambda(¨°“s8Ê¢àë+
+psquid:S1450"TRemove the "frame" field and declare it as a local variable in the relevant methods.(ñğ‰Í8·†şë+
+Isquid:S1604"(Make this anonymous inner class a lambda(Ğå°ñúÿÿÿÿ8³šÕë+
+squid:S1450"`Remove the "assessmentControl" field and declare it as a local variable in the relevant methods.(Ù›Ú•üÿÿÿÿ8‹±‰ë+
+Isquid:S1604"(Make this anonymous inner class a lambda(É™’úÿÿÿÿ8Ê¢àë+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Š”Øò8ûÎë+
+zsquid:S1450"^Remove the "whiteSpaceLabel" field and declare it as a local variable in the relevant methods.(ûšóÖ8æÄµë+
+tsquid:S3776"SRefactor this method to reduce its Cognitive Complexity from 122 to the 15 allowed.(Š˜À°şÿÿÿÿ8Ê¢àë+
+Jsquid:S1948".Make "majorControl" transient or serializable.(Ó’î˜8ßÜúë+
+squid:S1450"`Remove the "studentScrollPane" field and declare it as a local variable in the relevant methods.(ÏšÇ şÿÿÿÿ8€ãûë+
+Lsquid:S1948"0Make "studentControl" transient or serializable.(ÒşÕ8î¿Ø›ë+
+Isquid:S1948"-Make "bathControl" transient or serializable.(¾µñÏ8ßÜúë+
+Isquid:S1604"(Make this anonymous inner class a lambda(ôŞô•üÿÿÿÿ8¸äàë+
+Tsquid:S1948"3Make "assessmentControl" transient or serializable.(Ù›Ú•üÿÿÿÿ8õßÙ›ë+
+zsquid:S1450"_Remove the "entityScrollPane" field and declare it as a local variable in the relevant methods.(”Áç8€ãûë+
+Csquid:S1604"(Make this anonymous inner class a lambda(±ÖÇD8Ê¢àë+
+Dsquid:S1604"(Make this anonymous inner class a lambda(Ÿ•¢à8³šÕë+

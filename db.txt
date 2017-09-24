@@ -1,0 +1,63 @@
+CREATE TABLE TblBath (
+	_ord INT(6) AUTO_INCREMENT UNIQUE NOT NULL,
+	_code VARCHAR(10) PRIMARY KEY NOT NULL,
+	_name VARCHAR(30) NOT NULL
+);
+
+INSERT INTO TblBath(_code,_name) VALUES('BT006','Bitec 006');
+INSERT INTO TblBath(_code,_name) VALUES('BT007','Bitec 007');
+INSERT INTO TblBath(_code,_name) VALUES('BT008','Bitec 008');
+
+
+CREATE TABLE TblMajor (
+	_ord INT(6) AUTO_INCREMENT UNIQUE NOT NULL,
+	_code VARCHAR(10) PRIMARY KEY NOT NULL,
+	_name VARCHAR(30) NOT NULL
+);
+
+INSERT INTO TblMajor(_code,_name) VALUES('IT','Information technology');
+INSERT INTO TblMajor(_code,_name) VALUES('GD','Graphic design');
+INSERT INTO TblMajor(_code,_name) VALUES('BA','Business Administration');
+
+
+CREATE TABLE TblCourse (
+	_ord INT(6) AUTO_INCREMENT UNIQUE NOT NULL,
+	_code VARCHAR(10) PRIMARY KEY NOT NULL,
+	_name VARCHAR(30) NOT NULL
+);
+
+INSERT INTO TblCourse(_code,_name) VALUES('ARENA','Arena');
+INSERT INTO TblCourse(_code,_name) VALUES('BITEC','Bitec');
+INSERT INTO TblCourse(_code,_name) VALUES('TOPUP','Topup');
+
+
+CREATE TABLE TblAssessments (
+	_ord INT(6) AUTO_INCREMENT UNIQUE NOT NULL,
+	_code VARCHAR(10) PRIMARY KEY NOT NULL,
+	_name VARCHAR(30) NOT NULL
+);
+
+INSERT INTO TblAssessments(_code,_name) VALUES('PASS','pass');
+INSERT INTO TblAssessments(_code,_name) VALUES('MERIT','merit');
+INSERT INTO TblAssessments(_code,_name) VALUES('DISTIN','distinction');
+INSERT INTO TblAssessments(_code,_name) VALUES('FAIL','fail');
+
+
+CREATE TABLE TblStudent(
+	_ord INT(6) AUTO_INCREMENT UNIQUE NOT NULL,
+	_code VARCHAR(7) PRIMARY KEY NOT NULL,
+	_name VARCHAR(30) UNIQUE NOT NULL,
+	_bathCode VARCHAR(10),
+	_majorCode VARCHAR(10),
+	_caurseCode VARCHAR(10),
+	_assessmentsCode VARCHAR(10),
+	FOREIGN KEY (_bathCode) REFERENCES TblBath(_code),
+	FOREIGN KEY (_majorCode) REFERENCES TblMajor(_code),
+	FOREIGN KEY (_caurseCode) REFERENCES TblCourse(_code),
+	FOREIGN KEY (_assessmentsCode) REFERENCES TblAssessments(_code)
+);
+
+INSERT INTO TblStudent (_code, _name, _bathCode, _majorCode, _caurseCode, _assessmentsCode) VALUES ('GC01007','Son Tung MTP','BT007','IT','BITEC','PASS');
+INSERT INTO TblStudent (_code, _name, _bathCode, _majorCode, _caurseCode, _assessmentsCode) VALUES ('GC01008','Linh Ka','BT008','IT','BITEC','MERIT');
+INSERT INTO TblStudent (_code, _name, _bathCode, _majorCode, _caurseCode, _assessmentsCode) VALUES ('GC01009','Long Bi','BT007','IT','BITEC','DISTIN');
+
